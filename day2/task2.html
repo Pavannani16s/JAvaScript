@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var a=18;
+        var b="18";
+
+        //Compares two variables using different comparison operators//
+
+        console.log(a==b)  //true
+        console.log(a===b) //false
+        console.log(a!=b)  //false
+        console.log(a!==b) //true
+        console.log(a>b)   //false
+        console.log(a<b)   //false
+        console.log(a>=b)  //true
+        console.log(a<=b)  //true
+
+        //uses the ternary operator to determine if a number is even or odd.//
+
+        var a=prompt("Enter a number");
+        b=(a%2==0)?"Even":"Odd";
+        console.log(b);
+
+        //include a ternary operation that checks if a user is an adult (18+) or a minor.//
+
+        var a=prompt("Enter your age");
+        b=(a<18)?"Minor":"Adult";
+        console.log(b);
+
+        // Declare a variable score and set it to a value between 0 and 100.//
+
+        var score=prompt("Enter your score");
+        b=(score>=90)?"A GRADE": (score>=75)?"B GRADE" : (score>=60)?"C GRADE" : (score>=45)?"D GRADE" :"FAIL" 
+        console.log(b);
+        
+        // Declare a variable //
+
+        var temp=prompt("Enter the temperature");
+        n=(temp>30)?"hot":(temp>=20)?"Warm":(temp>=10)?"cool":(10>temp)?"cold":"please enter a valid temparature";
+        console.log(n);
+
+
+        var age=prompt("Enter your age");
+        n=(age>=65)?"SENIOR CITIZEN":(age>=20)?"ADULT":(age>=13)?"TEENAGER":(age>=0)?"CHILD": "please enter a valid age";
+        console.log(n);
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

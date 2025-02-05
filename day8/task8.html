@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        //FUNCTIONS
+        //function declaration
+          //by user input
+          function sum(a,b){
+            console.log(a+b);
+        }
+        console.log(sum);
+        sum(10,20);        
+        console.log(sum(2,3));
+
+        //function expression
+        var sum=function(a,b){
+            console.log(a+b);
+        }
+        console.log(sum);
+        sum(10,20);
+        console.log(sum(2,3));
+
+        //arrow function
+        var sum=(a,b)=>{
+            console.log(a+b);
+        }   
+        console.log(sum);
+        sum(10,20);
+        console.log(sum(2,3));
+
+        //return statement
+        function sum(a,b){
+            return a+b;
+        }
+        */
+        /*var a=a=>a+b
+        console.log(a(10,20));
+        console.log(a(2,3));
+        
+        //iife (immediately invoked function expression)
+        (function(){
+            console.log("hello world");
+        })();
+        debugger;
+        function sum(a,b){
+            console.log(a+b);
+        }
+        function fun(a){
+            console.log(a);
+            a()
+        }
+        fun(sum)*/
+
+        // call back fumctions 
+           // 1.products added to the cart 
+           // 2.payment completed 
+           // 3. order placed
+            debugger;
+           function first(callback){
+            console.log("Products added to the cart")
+            callback(third)
+
+           }
+
+           function second(callback){
+            console.log("Payemnt completed")
+            callback()
+
+
+           }
+
+           function third(callback){
+            console.log("Order placed")
+            //callback()
+           }
+           first(second)
+
+           //highorderfunction(callback)
+           
+
+
+
+        
+
+    </script>
+</body>
+</html>

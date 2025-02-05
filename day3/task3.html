@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        debugger
+        var a=45;
+
+        if(a!==10 ){
+            console.log("it is true ");
+        }
+        else{
+            console.log("it is false");
+        }
+
+        var temp=9;
+        if (temp<=10){
+            console.log("temp is cold");
+        }
+        else if(temp<=20){
+            console.log("temp is cool");
+        }
+        else if(temp<=30){
+            console.log("temp is warm");
+
+        }
+        else {
+            console.log("temp is hot");
+        }
+
+        var temp=prompt("Enter the temperature");
+
+        if (20>=temp){
+            console.log("temp is cool");
+        }
+        else if(temp>20){
+            console.log("temp is warm");
+        }
+        else if(temp>30){
+            console.log("temp is hot");
+        }
+        else{
+            console.log("none of the above");
+        }
+
+
+
+       // SWITCH CASE
+
+      var light= prompt("ENTER ANY COLOR OF TRAFFIC LIGHT");
+       switch(light){
+           case "red":
+               console.log("stop now");
+               break;
+            case "yellow":
+                console.log("get ready to move");
+                break;
+            case "green":
+                console.log("you can go now");
+                break;
+            default:
+                console.log("Please enter a valid color");
+       }
+
+       var num1=prompt("Enter first number");
+       var num2=prompt("Enter second number");
+         
+         var operation=prompt("Enter any one of + - * /");
+
+         switch(operation){
+             case "+":
+                 console.log("The sum of two numbers is "+((num1)+(num2)));
+                 break;
+            case "-":
+                console.log("The difference of two numbers is "+((num1)-(num2)));
+                break;
+            case "*":
+                console.log("The product of two numbers is "+((num1)*(num2)));
+                break;
+            case "/":
+                console.log("The division of two numbers is "+((num1)/(num2)));
+                break;
+            default:
+                console.log("Please enter a valid operation");
+         }
+
+
+         // DISPLAYING THE DAYS OF THE WEEK
+
+         var day=prompt("Enter the day i.e(monday,tuesday,wednesday,thursday,friday,saturday,sunday)");
+         switch (day){
+            case "monday":
+                console.log("START YOUR WEEK STRONG");
+                break;
+            case "tuesday":
+                console.log("KEEP GOING");
+                break;
+            case "wednesday":
+                console.log("HALFWAY THERE");
+                break;
+            case "thursday":
+                console.log("ALMOST THE WEEKEND");
+                break;
+            case "friday":
+                console.log("HAPPY FRIDAY");
+                break;
+            case "saturday":
+                console.log("ENJOY YOUR WEEKEND");
+                break;
+            case "sunday":
+                console.log("ENJOY YOUR WEEKEND");
+                break;
+            default:
+                console.log("Please enter a valid day");   
+         }
+    
+
+        //CALCULATING THE DISCOUNT BASED ON THE TOTAL PURCHASE AMOUNT 
+
+        var total=prompt("Enter the total purchase amount");
+        
+        if(total<=50){
+            console.log("We are not providing a discount for below 50");
+        }
+        else if(total<=100){
+            console.log("we are a 5% discount for the total purchase amount");
+            console.log("The total amount after discount is "+(total-(total*0.05)));
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="child1">
+            <button onclick="showMessage(1)">+</button>
+            <span id="totalClick">0</span>
+            <button onclick="showMessage(-1)">-</button>
+        </div>
+        <div class="child2">
+            <button onclick="showMessage(0)">RESET</button>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const generateOTP = document.querySelector("generateOTP");
+            const otpInput = document.querySelectorAll(".Otp-input");
+
+            generateOTP.addEventListener("click")   
+            
+
+        })
+        function showMessage(value){
+            const totalClick = document.getElementById("totalClick");
+            let total = parseInt(totalClick.innerText);
+            total += value;
+            totalClick.innerText = total;
+        }
+
+    
+
+    </script>
+</body>
+</html>

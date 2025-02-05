@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        NESTED LOOP
+        mainloop -1st
+        inner loop - complete
+        mainloop
+
+        break
+        continue - to skip the current itteration
+
+        
+
+
+        */
+
+        let obj={
+            name:"pavan",
+            age:23,
+        }
+        for (i in obj){
+            console.log(i)  //Keys of on obj
+        }
+        for (i in obj){
+            console.log(obj[i])  // values in obj
+        }
+
+
+        //REVERSE
+
+        let str="pavan nani";
+        rev=""
+        for (i in str){
+            rev=str[i]+rev;
+        }
+        console.log()
+
+        // sum of given numbers using for in loop a a=[1,2,3]
+        let a=[1,2,3]
+        let sum=0;
+        for(let num of a){
+            sum+=num;
+        }
+        console.log(sum);
+
+        //  sum of given numbers
+        //  count of given numbers
+        // even and odd numbers 
+        // evensum and oddsum 
+        // factorial
+        // prime number
+        // max and min number 
+
+        //  max and min number 
+
+        /*let numbers = [3, 5, 7, 2, 8, -1, 4, 10, 12];
+        let max = numbers[0];
+        let min = numbers[0];
+
+        for (i of numbers) {
+            if (i > max) {
+                max =i;
+            }
+            if (i < min) {
+                min = i;
+            }
+        }
+
+        console.log("Max number:", max);
+        console.log("Min number:", min);*/
+
+        //prime number
+        // prime number
+
+        /*var numbers=[ 2,25,,335,5,42,,3,,1,313,131,313131,224,543,53,,77,6,7]
+
+
+        let isPrime = (num) => {
+            if (num <= 1) return false;
+            for (let i = 2; i < num; i++) {
+            if (num % i === 0) return false;
+            }
+            return true;
+        }
+
+        let primes = [];
+        for (let num of numbers) {
+            if (isPrime(num)) {
+            primes.push(num);
+            }
+        }
+
+        console.log("Prime numbers:", primes); */
+
+        prime=prompt("enter any number")
+        count=true;
+        for (i=2;i<prime;i++){
+            if(prime%i==0){
+                console.log(i, prime,"not prime")
+                count=false;
+                break
+            }
+        }
+        if(count){
+            console.log(prime, "is prime number")
+        }  
+
+
+
+
+
+    </script>
+
+</body>
+</html>
