@@ -41,3 +41,10 @@ button:hover {
 a {
     text-decoration: none;
 }
+button {
+    transition: transform 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.8);
+}
