@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+    .main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    img{
+        height: 150px;
+        width: 100px;
+    }
+    
+    </style>
+
+</head>
+<body>
+    
+
+    <script>
+        
+
+        var main=document.createElement("div")
+        //console.log(main)
+
+        var myImages=[
+        "https://cdn.siasat.com/wp-content/uploads/2023/10/2023_10img08_Oct_2023_PTI10_08_2023_000020B-scaled.jpg",
+        "https://woxsen.edu.in/uploads/A20230612063648.webp",
+        "https://www.traveltourguru.in/wp-content/uploads/2017/05/Hyderabad-City.jpg",
+        "https://media1.thrillophilia.com/filestore/1t0oqqx4vaadg3arelawrraggrwm_1576911019_cover.jpg?w=400&dpr=2",
+        "https://admin.stayatpurijagannatha.in/images/frontend/main-slider-1_1670308972.jpg",
+        "https://superadmin.homes247.in/images/stories/1706423511-1706423511-Ramoji%20Film%20City%20-%20Homes247.jpg",
+
+        ]
+
+        var content=[
+        "Charminar",
+        "Tankbund",
+        "Cyber Towers",
+        "Makka Masjid",
+        "Puri Jagannath Temple",
+        "Ramoji Filmcity",
+        ]
+        
+        
+        for (i=0;i<=myImages.length;i++){
+            
+            var child=document.createElement("div");
+            //content.style.backgroundColor="violet"
+            //child.style.padding="20px";
+            child.style.backgroundImage=`url(${myImages[i]})`;
+            child.style.backgroundSize="contain";
+
+            child.style.backgroundRepeat="no-repeat";
+            child.style.height="200px";
+            child.style.width="200px";
+            child.style.margin="20px";
+            child.innerText=content[i];
+            child.style.color="white";
+            //console.log(child)
+            main.append(child)
+        
+        //var img=document.createElement("img");
+        //var h3=document.createElement("h3");
+        //h3.style.backgroundColor="white"
+
+        //h3.innerText=[content[i-1]];
+        //console.log(img)
+
+        //child.append(img);
+        //child.append(h3);
+        //main.append(child)
+
+
+
+        }
+
+        document.body.append(main)
+        main.setAttribute("class","main")
+        console.log(main)
+
+        
+    </script>
+</body>
+</html>
