@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let arr=["hi nanna","ninnu kori","saripodha shanivaram"]
+        //arr.push("kedarnath")
+        //arr.push("chichhore")
+        //arr.push("raabta")
+
+        //console.log(arr)
+
+        //for 
+        for (i=0;i<arr.length;i++){
+            //console.log(arr[i])
+        }
+
+        //for in
+        for ( i in arr) {
+           // console.log(arr[i]); 
+        }
+
+        //for of
+        for (i of arr){
+           // console.log(i)
+        }
+
+        // 2) REMOVE ELEMENTS FROM AN ARRAY (first and last)
+        let first=arr.shift();
+        console.log(first) //hi nanna
+        console.log(arr)  //['ninnu kori', 'saripodha shanivaram']
+        let last=arr.pop();
+        console.log(last) //saripodha shanivaram
+
+
+        // 5)heterogeneous array 
+        let heterogeneousArray=["pavan",1,10, true, 3.14, { name: "John" }, [1, 2, 3]]
+        
+        let numbers = [];
+        let strings = [];
+        let booleans = [];
+        let objects = [];
+        let arrays = [];
+        let floats=[];
+
+        for (i=0; i<heterogeneousArray.length;i++){
+            
+        }
+
+
+
+
+        
+
+
+
+    </script>
+</body>
+</html>

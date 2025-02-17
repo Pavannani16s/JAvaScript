@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="images">
+        <img src="https://png.pngtree.com/template/20220522/ourmid/pngtree-indian-cinema-background-bollywood-film-poster-image_1648488.jpg" alt="">
+    </div>
+    <div class="boxes">
+        <button id="btn1">RANBIR </button>
+        <button id="btn2">SHARUKH</button>
+        <button id="btn3"></button>
+        <button id="btn4"></button>
+        <button id="btn5"></button>
+    </div>
+
+    <script>
+        let btn1=document.querySelector("#btn1")
+        let btn2=document.querySelector("#btn2")
+        let btn3=document.querySelector("#btn3")
+        let btn4=document.querySelector("#btn4")
+        let btn5=document.querySelector("#btn5")
+
+        document.querySelector(".images img").style.height="150px";
+        document.querySelector(".images img").style.width="200px";
+        document.querySelector(".images img").style.border="2px solid black";
+        document.querySelector(".images img").style.borderRadius="20px";
+       // img.style.boxShadow = "10px 10px 5px #888888";
+
+        btn1.addEventListener('click',function(){
+            document.querySelector(".images img").src="https://i.pinimg.com/236x/66/41/40/664140c01e880d5d806bb1b420943562.jpg";
+        })
+
+        btn2.addEventListener('click', function(){
+            document.querySelector(".images img").src="https://img.theweek.in/content/dam/week/magazine/theweek/leisure/images/2023/2/11/63-Shah-Rukh-Khan.jpg";
+        })
+
+        btn3.addEventListener('click',function(){
+            document.querySelector(".images img").src="https://static.wixstatic.com/media/cd1931_ee807831f0c445ed8745b244c1457f73~mv2.webp/v1/fill/w_600,h_450,al_c,q_80,enc_avif,quality_auto/ranveer%20singh.webp";
+        })
+
+        btn4.addEventListener('click',function(){
+            document.querySelector(".images img").src="https://www.beyoung.in/beyoungistan/wp-content/uploads/2023/04/Karthik-Aryan-709x1024.jpg";
+        })
+
+        btn5.addEventListener('click',function(){
+            document.querySelector(".images img").src="https://static.sociofyme.com/photo/102428712/102428712.jpg";
+        })
+
+
+    </script>
+</body>
+</html>

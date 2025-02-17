@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hours"></div>
+    <div class="minutes"></div>
+    <div class="seconds"></div>
+    
+
+    <script>
+        
+
+        
+        
+        /*let present=new Date();
+        console.log(present)
+        console.log(present.getFullYear())
+        console.log(present.getMonth()+1)
+        console.log(months[present.getMonth()])
+        console.log(present.getDate())
+        console.log(present.getHours())
+        console.log(present.getMinutes())
+        console.log(present.getMilliseconds())
+        
+        let months=["jan","feb","march","apr","may","june","july","aug","sep","oct","nov","dec"]
+        */
+
+        
+        
+        setInterval(()=>{
+            
+            let present= new Date()
+
+        let hours=document.getElementsByClassName("hours")[0]
+        hours.innerHTML=present.getHours()
+        console.log(hours)
+
+        let min=document.getElementsByClassName("minutes")[0]
+        min.innerHTML=present.getMinutes()
+
+        console.log(min)
+
+        let sec=document.getElementsByClassName("seconds")[0]
+        sec.innerHTML=present.getSeconds()
+        console.log(sec)
+
+        },1000)
+        
+
+
+        /* let num=prompt("enter a num ")
+        console.log(Math.ceil(num))
+        console.log(Math.round(num))
+        console.log(Math.abs(num))
+        console.log(Math.floor(num))
+        console.log(Math.trunc(num))
+        console.log(Math.max(num))
+        console.log(Math.min(num))
+        console.log(Math.pow(num))
+        console.log(Math.sqrt(num))
+        console.log(Math.random(num))
+        */
+
+
+
+
+     
+        
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

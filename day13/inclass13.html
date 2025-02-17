@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(182, 190, 187);
+    }
+</style>
+<body>
+
+    <input type="password" id="ps1" placeholder="Enter Password">
+    <input type="password" id="ps2" placeholder="Confirm Password">
+    <button id="sub">Submit</button>
+
+    <div id="result"></div>
+
+    <script>
+
+        // Password Matcher 
+        document.getElementById("sub").addEventListener('click', function() {
+            let ps1 = document.getElementById("ps1").value;
+            let ps2 = document.getElementById("ps2").value;
+            let resultDiv = document.getElementById("result");
+            resultDiv.style.width="150px"
+            resultDiv.style.margin="10px"
+            resultDiv.style.padding="10px"
+            resultDiv.style.border="2px solid grey"
+            resultDiv.style.borderRadius="20px"
+
+
+            if (ps1 === ps2) {
+                resultDiv.textContent = "Password is correct";
+                resultDiv.style.color = "green";
+
+            } 
+            else {
+                resultDiv.textContent = "Password is incorrect";
+                resultDiv.style.color = "red";
+
+            }
+            console.log(resultDiv.textContent)
+        });
+    </script>
+
+</body>
+</html>
